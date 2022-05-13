@@ -1,9 +1,5 @@
 import {
-    Box,
     Button,
-    Card,
-    CardContent,
-    CardMedia,
     Container,
     Grid,
     IconButton,
@@ -13,10 +9,9 @@ import {
 }from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { FullscreenExit } from '@material-ui/icons'
 import SearchIcon from '@material-ui/icons/Search'
 import TemplateDefault from '../src/templates/Default'
-import theme from '../src/theme'
+import Card from '../src/components/Card'
 
 const useStyles = makeStyles((theme) => ({
     searchBox: {
@@ -24,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         padding: theme.spacing(0, 2),
         marginTop: 20,
-    },  
-    cardMedia: {
-        paddingTop: '56%',
     },
+    cardGrid: {
+        marginTop: 50,
+    }
 }))
  
 const Home = () => {
@@ -57,55 +52,25 @@ const Home = () => {
                 <br />
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6} md={4}>
-                        <Card>
-                            <CardMedia
-                                className={classes.cardMedia}
-                                image={'http://source.unsplash.com/random'}
-                                title="Titulo da imagem"
-                            />
-                            <CardContent>
-                                <Typography variant="h5" component="h2">
-                                    Produto X
-                                </Typography>
-                                <Typography>
-                                    R$ 59,90
-                                </Typography>
-                            </CardContent>
-                        </Card>
+                        <Card
+                            image={'http://source.unsplash.com/random'}
+                            title="Produto X"
+                            subtitle="R$ 59,90"
+                        />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
-                        <Card>
-                            <CardMedia
-                                className={classes.cardMedia}
-                                image={'http://source.unsplash.com/random'}
-                                title="Titulo da imagem"
-                            />
-                            <CardContent>
-                                <Typography variant="h5" component="h2">
-                                    Produto X
-                                </Typography>
-                                <Typography>
-                                    R$ 59,90
-                                </Typography>
-                            </CardContent>
-                        </Card>
+                        <Card
+                            image={'http://source.unsplash.com/random'}
+                            title="Produto X"
+                            subtitle="R$ 59,90"
+                        />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
-                        <Card>
-                            <CardMedia
-                                className={classes.cardMedia}
-                                image={'http://source.unsplash.com/random'}
-                                title="Titulo da imagem"
-                            />
-                            <CardContent>
-                                <Typography variant="h5" component="h2">
-                                    Produto X
-                                </Typography>
-                                <Typography>
-                                    R$ 59,90
-                                </Typography>
-                            </CardContent>
-                        </Card>
+                        <Card
+                            image={'http://source.unsplash.com/random'}
+                            title="Produto X"
+                            subtitle="R$ 59,90"
+                        />
                     </Grid>
                 </Grid>
             </Container>

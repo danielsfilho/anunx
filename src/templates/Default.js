@@ -1,11 +1,24 @@
+import { Box } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core'
+
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+const useStyle = makeStyles((theme) => ({
+    container: {
+        padding: theme.spacing(6, 0, 6)
+    },
+}))
+
 const Default = ({ children }) => {
+    const classes = useStyle()
+
     return(
         <>
             <Header />
-            {children}
+            <Box className={classes.container}>
+                {children}
+            </Box>            
             <Footer />
         </>
     )

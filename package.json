@@ -14,7 +14,8 @@
     "next": "12.1.6",
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "react-dropzone": "^14.2.1"
+    "react-dropzone": "^14.2.1",
+    "react-material-ui-carousel": "v2"
   },
   "devDependencies": {
     "eslint": "8.15.0",

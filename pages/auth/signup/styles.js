@@ -12,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
     toLogin: {
         cursor: 'Pointer',
     },
+    loading: {
+        display: 'block',
+        margin: '10px auto',
+    }
 }))
 
 export default useStyles

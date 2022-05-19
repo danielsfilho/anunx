@@ -12,7 +12,10 @@ const useStyle = makeStyles((theme) => ({
             paddingTop: theme.spacing(6),
             paddingBottom: theme.spacing(6),
         }
-    }
+    },
+    linkFooter: {
+        cursor: 'Pointer',
+    },
 }))
 
 const Footer = () => {
@@ -23,8 +26,8 @@ const Footer = () => {
             <Grid container spacing={3}>
                 <Grid item xs={6} sm={3}>
                     <Box textAlign="center">
-                        <Link href="#" passHref>
-                            <Typography color="textSecondary" variant="subtitle1">
+                        <Link href="#" passHref >
+                            <Typography color="textSecondary" variant="subtitle1" className={classes.linkFooter}>
                                 Ajuda e Contato
                             </Typography>
                         </Link>
@@ -33,7 +36,7 @@ const Footer = () => {
                 <Grid item xs={6} sm={3}>
                     <Box textAlign="center">
                         <Link href="#" passHref>
-                            <Typography color="textSecondary" variant="subtitle1">
+                            <Typography color="textSecondary" variant="subtitle1" className={classes.linkFooter}>
                                 Dicas de segurança
                             </Typography>
                         </Link>
@@ -42,7 +45,7 @@ const Footer = () => {
                 <Grid item xs={6} sm={3}>
                     <Box textAlign="center">
                         <Link href="#" passHref>
-                            <Typography color="textSecondary" variant="subtitle1">
+                            <Typography color="textSecondary" variant="subtitle1" className={classes.linkFooter}>
                                 Anunciar e Vender
                             </Typography>
                         </Link>
@@ -51,7 +54,7 @@ const Footer = () => {
                 <Grid item xs={6} sm={3}>
                     <Box textAlign="center">
                         <Link href="#" passHref>
-                            <Typography color="textSecondary" variant="subtitle1">
+                            <Typography color="textSecondary" variant="subtitle1" className={classes.linkFooter}>
                                 Plano profissional
                             </Typography>
                         </Link>

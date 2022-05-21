@@ -19,7 +19,7 @@ import { initialValues, validationSchema } from '../../auth/signup/formValues'
 import useToasty from '../../../src/contexts/Toasty'
 import useStyles from '../../auth/signup/styles'
 
-const Signin = () => {
+const Signup = () => {
     const classes = useStyles()
     const router = useRouter()
     const { setToasty } = useToasty()
@@ -156,7 +156,7 @@ const Signin = () => {
                                                 variant="contained"
                                                 color="primary"
                                                 >
-                                                Entrar
+                                                Cadastrar
                                             </Button>
                                             )
                                     }
@@ -178,4 +178,4 @@ const Signin = () => {
     )
 }
 
-export default Signin
+export default Signup

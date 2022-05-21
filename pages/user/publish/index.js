@@ -41,7 +41,7 @@ const Publish = () => {
                         handleSubmit,
                         setFieldValue,
                     }) => {
-                                         
+                    
                         return(
                             <form onSubmit={handleSubmit}>
                                 <Container maxWidth="sm">
@@ -238,5 +238,7 @@ const Publish = () => {
         </TemplateDefault>
     )
 }
+
+Publish.requireAuth = true
 
 export default Publish
